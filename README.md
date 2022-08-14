@@ -4,9 +4,9 @@
 
 <p id="description">Application made by Nest.js, create a website to visualize the calendar et eta of synchronisation. 
 	
-*Application réalisée avec Nest.js et Typescript permettant de voir les différents calendriers de l'école et l'état de la synchronisation/*</p>
+*Application réalisée avec Nest.js et Typescript permettant de voir les différents calendriers de l'école et l'état de la synchronisation*</p>
 
-<p align="center"><img src="https://img.shields.io/github/package-json/v/Kritune-Dev/ihna-calendar-website" alt="shields"><img src="https://img.shields.io/github/license/Kritune-Dev/ihna-calendar-website" alt="shields"></p>
+<p align="center"><img src="https://img.shields.io/github/package-json/v/Kritune-Dev/ihna-calendar-website" alt="shields">
 
 <h2>🚀 Website in production</h2>
 
