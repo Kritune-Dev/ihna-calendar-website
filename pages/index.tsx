@@ -1,6 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import BackgroundImage from '../src/components/BackgroundImage'
+import Footer from '../src/components/Footer'
+import Title from '../src/components/Title'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -12,48 +15,25 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={styles.bgWrap}>
-      <Image
-        alt="Mountains"
-        src="/mountains.jpg"
-        layout="fill"
-        objectFit="cover"
-        quality={100}
-      />
-    </div>
+      <BackgroundImage />
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Bienvenue sur les calendriers Idheo 
-        </h1>
-
-        <p className={styles.description}>
-          La dernière actualisation des calendriers à été faite il y a {' '}
-          <code className={styles.code}>11 minutes</code>
-        </p>
+        <Title/>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>🟢 Synchronisation &rarr;</h2>
-            <p>Permet de voir l&apos;état de synchronisation des calendriers</p>
-          </a>
-
           <a href="https://nextjs.org/learn" className={styles.card}>
             <h2>📆 Votre calendrier &rarr;</h2>
             <p>Permet de retrouver le lien de votre calendrier et les tutos pratiques</p>
           </a>
+
+          <a href="https://nextjs.org/docs" className={styles.card}>
+            <h2>🟢 Synchronisation &rarr;</h2>
+            <p>Permet de voir l&apos;état de synchronisation des calendriers</p>
+          </a>
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://github.com/Kritune-Dev/ihna-calendar-website"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by Corentin Bacconnais
-        </a>
-      </footer>
+      <Footer />
     </div>
   )
 }
