@@ -1,5 +1,5 @@
 .container {
-  padding: 0 2rem;
+  padding: 0;
 }
 
 .main {
@@ -70,7 +70,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 1500px;
 }
 
 .card {
@@ -119,11 +119,20 @@
   .card,
   .footer {
     border-color: #222;
+    background: rgba(0,0,0, 0.35);
   }
   .code {
-    background: #111;
+    background: rgba(0,0,0, 0.7);
   }
   .logo img {
     filter: invert(1);
   }
+}
+
+.bgWrap {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
 }
