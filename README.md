@@ -1,34 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center" id="title">Calendrier IdHEO</h1>
 
-## Getting Started
+<p align="center"><img src="https://socialify.git.ci/Kritune-Dev/ihna-calendar-website/image?description=1&descriptionEditable=Application%20r%C3%A9alis%C3%A9e%20avec%20Nest.js%20et%20Typescript%20permettant%20de%20voir%20les%20diff%C3%A9rents%20calendriers%20de%20l%27%C3%A9cole%20et%20l%27%C3%A9tat%20de%20la%20synchronisation%2F&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light" alt="project-image"></p>
 
-First, run the development server:
+<p id="description">Application made by Nest.js, create a website to visualize the calendar et eta of synchronisation. 
+	
+*Application réalisée avec Nest.js et Typescript permettant de voir les différents calendriers de l'école et l'état de la synchronisation/*</p>
 
-```bash
-npm run dev
-# or
-yarn dev
+<p align="center"><img src="https://img.shields.io/github/package-json/v/Kritune-Dev/ihna-calendar-website" alt="shields"><img src="https://img.shields.io/github/license/Kritune-Dev/ihna-calendar-website" alt="shields"></p>
+
+<h2>🚀 Website in production</h2>
+
+[ihna-calendar-website.vercel.app](ihna-calendar-website.vercel.app) 
+  
+<h2>🧐 Features</h2>
+
+Here're some of the project's best features:
+
+*   Server-side-rending
+*   Auto-deploy in vercel.app
+*   Responsive design
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Install the latest version of node from nodejs.org</p>
+
+<p>2. Clone this repository</p>
+
+<p>3. Install dependancies</p>
+
+```
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p>4. Start dev server</p>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+npm run dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+  
+  
+<h2>💻 Built with</h2>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Technologies used in the project:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+*   React
+*   Nextjs
