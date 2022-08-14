@@ -47,7 +47,7 @@ const Home: NextPage = () => {
 
       <footer className={styles.footer}>
         <a
-          href="https://github.com/Kritune-Dev/ihna-calendar-vebwsite"
+          href="https://github.com/Kritune-Dev/ihna-calendar-website"
           target="_blank"
           rel="noopener noreferrer"
         >

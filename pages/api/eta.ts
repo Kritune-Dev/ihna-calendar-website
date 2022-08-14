@@ -1,4 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import * as dotenv from "dotenv";
+dotenv.config({ path: __dirname+'/.env' });
 
 type Data = {
   dateOfLastCheck: number,
@@ -13,7 +15,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
   const response = await fetch("https://api.jsonbin.io/v3/b/62f88b89e13e6063dc79ff90", {
     method: "GET",
     headers: {
-      'X-Master-Key': '$2b$10$hthFJoHDMFksr3JY/9S8Xuuo.xoZP.wzymXJs9goxcSmTSd1HS.PC', 
+      'X-Master-Key': process.env.XMASTERKEY as string, 
       'X-Bin-Meta': 'false',
       "Content-Type": "application/json",
     },
