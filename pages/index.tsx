@@ -21,12 +21,12 @@ const Home: NextPage = () => {
         <Title/>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/learn" className={styles.card}>
+          <a href="/calendar" className={styles.card}>
             <h2>📆 Votre calendrier &rarr;</h2>
             <p>Permet de retrouver le lien de votre calendrier et les tutos pratiques</p>
           </a>
 
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <a href="/sync" className={styles.card}>
             <h2>🟢 Synchronisation &rarr;</h2>
             <p>Permet de voir l&apos;état de synchronisation des calendriers</p>
           </a>
