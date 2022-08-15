@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import * as dotenv from "dotenv";
-import Data from "../../src/types/Data";
+import {Data} from "../../src/types/Data";
 dotenv.config({ path: __dirname+'/.env' });
 
 
