@@ -1,10 +1,13 @@
-export default interface Calendrier {
+interface Calendrier {
   groupe: string,
   update: boolean,
   calendarId: string,
 }
 
-export default interface Data {
+interface Data {
   dateOfLastCheck: number,
   result : Array<Calendrier>
 }
+
+export type { Calendrier, Data };
+

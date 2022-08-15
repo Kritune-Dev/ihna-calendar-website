@@ -5,7 +5,7 @@ import BackgroundImage from '../src/components/BackgroundImage'
 import Footer from '../src/components/Footer'
 import Title from '../src/components/Title'
 import useData from '../src/lib/data.hook'
-import Data from '../src/types/Data'
+import {Data} from '../src/types/Data'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
