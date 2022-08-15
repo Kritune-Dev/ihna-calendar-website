@@ -113,6 +113,16 @@
     width: 100%;
     flex-direction: column;
   }
+  .title {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+  .code {
+    font-size: 0.9rem;
+    padding: 0.3rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
