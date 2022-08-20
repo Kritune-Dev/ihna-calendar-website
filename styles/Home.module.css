@@ -20,7 +20,8 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  border-color: #222;
+  background: rgba(0,0,0, 0.35);
   justify-content: center;
   align-items: center;
 }
@@ -61,7 +62,7 @@
 }
 
 .code {
-  background: #fafafa;
+  background: rgba(0,0,0, 0.7);
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
@@ -106,7 +107,8 @@
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border-color: #222;
+    background: rgba(0,0,0, 0.35);
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
@@ -135,6 +137,15 @@
   margin-left: 0.5rem;
 }
 
+.calendarView {
+  background: rgba(0,0,0, 0.35);
+  border-radius: 10px;
+  border: 1px solid #eaeaea;
+  margin: 1rem;
+  padding: 1.5rem;
+  width: 80vw;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
@@ -150,21 +161,7 @@
     font-size: 0.9rem;
     padding: 0.3rem;
   }
-}
-
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-    background: rgba(0,0,0, 0.35);
-  }
-  .code {
-    background: rgba(0,0,0, 0.7);
-  }
-  .logo img {
-    filter: invert(1);
-  }
-}
+}s
 
 .bgWrap {
   position: fixed;
