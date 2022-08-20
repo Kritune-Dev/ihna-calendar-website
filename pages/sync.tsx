@@ -10,7 +10,7 @@ import { Data, Calendrier } from "../src/types/Data";
 const Sync: NextPage = () => {
   const { data, error } = useData();
   const dataT = data as Data;
-  
+
   return (
     <div className={styles.container}>
       <Head>
@@ -27,11 +27,30 @@ const Sync: NextPage = () => {
       <main className={styles.main}>
         <Title />
 
-        <div className={styles.grid}>
-          <ul>
-            {!dataT ? (<p>Loading...</p>) : (dataT.result.map((calendar: Calendrier) => {return (<li key={calendar.calendarId}>{calendar.groupe} {calendar.update ? "🟢" : "🔴"}</li>)}))}
-          </ul>
-        </div>
+        <table className={styles.table}>
+          <thead className={styles.tableHead}>
+            <tr className={styles.tableRow}>
+              <th className={styles.tableCell}>Groupe</th>
+              <th className={styles.tableCell}>Etat de la synchronisation</th>
+            </tr>
+          </thead>
+          <tbody className={styles.tableBody}>
+            {!dataT ? (
+              <tr>Loading ...</tr>
+            ) : (
+              dataT.result.map((calendar: Calendrier) => {
+                return (
+                  <tr key={calendar.groupe} className={styles.tableRow}>
+                    <td>
+                      <p className={styles.textAlignCenter}>{calendar.groupe}</p>                      
+                    </td>
+                    <td><p className={styles.textAlignCenter}>{calendar.update ? "Synchronisation ok 🟢" : "Pas à jour 🔴"}</p></td>
+                  </tr>
+                );
+              })
+            )}
+          </tbody>
+        </table>
       </main>
 
       <Footer />
