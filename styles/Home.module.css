@@ -146,6 +146,25 @@
   width: 80vw;
 }
 
+.gridVerticale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  align-content: space-around;
+  flex-direction: column;
+}
+
+.listItem {
+  padding: 2vh;
+  display: flex;
+  margin: 1vh;
+  border: white 1px solid;
+  border-radius: 25px;
+  background-color: #464641 ;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

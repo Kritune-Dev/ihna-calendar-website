@@ -1,8 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import BackgroundImage from "../src/components/BackgroundImage";
-import CalendarCard from "../src/components/CalendarPage/CalendarCard";
-import CalendarItem from "../src/components/CalendarPage/CalendarItem";
 import Footer from "../src/components/Footer";
 import Title from "../src/components/Title";
 import useData from "../src/lib/data.hook";
@@ -34,33 +32,20 @@ const Calendar: NextPage = () => {
       <main className={styles.main}>
         <Title />
 
-        <div className={styles.calendarView}>
-          <div>
-            <input placeholder="Saisir nom du groupe"></input>
-            <button>Rechercher</button>
-          </div>
-
+        <div >
           <div className={styles.grid}>
             <div className={styles.gridVerticale}>
               {!dataT ? (
                 <p>Loading...</p>
               ) : (
                 dataT.result.map((calendar: Calendrier) => {
+                  const linkDirect = 'https://calendar.google.com/calendar/u/0/r?cid=' + calendar.calendarId
                   return (
-                    <CalendarItem
-                      key={calendar.calendarId}
-                      groupe={calendar.groupe}
-                    />
+                    <a className={styles.listItem} href={linkDirect} target="_blank" rel="noopener noreferrer" key={calendar.calendarId}>{calendar.groupe}</a>
                   );
                 })
               )}
             </div>
-
-            <CalendarCard
-              groupe={calendrier.groupe}
-              update={calendrier.update}
-              calendarId={calendrier.calendarId}
-            />
           </div>
         </div>
       </main>
