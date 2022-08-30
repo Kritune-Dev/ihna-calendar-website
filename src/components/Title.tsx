@@ -32,6 +32,10 @@ export default function Title() {
       <p className={styles.description}>
         La dernière actualisation des calendriers à été faite il y a <br />{" "}<Time />
       </p>
+
+      <p className={styles.disclamer}>
+        Il s&apos;agit de calendrier non officiel générer par un programme. Il faut toujours faire confiance aux calendriers officiels
+      </p>
     </div>
   );
 }

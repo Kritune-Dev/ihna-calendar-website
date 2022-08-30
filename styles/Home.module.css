@@ -51,14 +51,23 @@
 }
 
 .title,
-.description {
+.description,
+.disclamer {
   text-align: center;
 }
 
 .description {
-  margin: 4rem 0;
+  margin: 4rem 0 2rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+}
+
+.disclamer {
+  margin: 1rem 0 3rem 0;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  color: red;
+  font-weight: 500;
 }
 
 .code {
@@ -173,7 +182,8 @@
   .title {
     font-size: 3rem;
   }
-  .description {
+  .description,
+  .disclamer {
     font-size: 1rem;
   }
   .code {
