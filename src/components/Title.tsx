@@ -27,14 +27,14 @@ export default function Title() {
 
   return (
     <div>
-      <h1 className={styles.title}>Bienvenue sur les calendriers Idheo</h1>
+      <h1 className={styles.title}>Bienvenue sur les calendriers d&apos;ostéopathie</h1>
 
       <p className={styles.description}>
         La dernière actualisation des calendriers à été faite il y a <br />{" "}<Time />
       </p>
 
       <p className={styles.disclamer}>
-        Il s&apos;agit de calendrier non officiel générer par un programme. Il faut toujours faire confiance aux calendriers officiels
+        Ce sont des calendriers par groupes non officiels et générés par un programme. Il faut toujours faire confiance aux calendriers officiels fournis par l&apos;école
       </p>
     </div>
   );

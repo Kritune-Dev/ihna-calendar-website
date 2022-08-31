@@ -10,7 +10,7 @@ export default class Footer extends Component {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by Corentin Bacconnais
+          Produit par Corentin B
         </a>
       </footer>
     )

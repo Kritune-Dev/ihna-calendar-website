@@ -63,7 +63,7 @@ const Calendar: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Calendriers Idheo | Calendrier </title>
+        <title>Calendriers</title>
         <meta
           name="description"
           content="Main website to see eta of synchronisation of calendar"

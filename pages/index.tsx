@@ -23,7 +23,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Calendriers Idheo</title>
+        <title>Calendriers</title>
         <meta name="description" content="Main website to see eta of synchronisation of calendar" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

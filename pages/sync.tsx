@@ -14,7 +14,7 @@ const Sync: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Calendriers Idheo | Synchronisation </title>
+        <title>Calendriers | Synchronisation </title>
         <meta
           name="description"
           content="Main website to see eta of synchronisation of calendar"
