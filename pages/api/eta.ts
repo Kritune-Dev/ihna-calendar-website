@@ -5,10 +5,10 @@ dotenv.config({ path: __dirname+'/.env' });
 
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
-  const response = await fetch("https://api.jsonbin.io/v3/b/62f88b89e13e6063dc79ff90", {
+  const response = await fetch("https://api.jsonbin.io/v3/b/6347d0232b3499323bdd0150", {
     method: "GET",
     headers: {
-      'X-ACCESS-KEY': "$2b$10$dwGihaSolnvycANL/Cdxz.RzqbuvdESLSZrNTfNpNfDc5TAMGpnnC",
+      'X-ACCESS-KEY': "$2b$10$FvPZP/ywLYNjWQizTbM89.ilNghGKHSuneGxPNfvOiS6lJnzWNjqG",
       'X-Bin-Meta': 'false',
       "Content-Type": "application/json",
     },
